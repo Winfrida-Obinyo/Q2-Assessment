@@ -231,27 +231,6 @@ class Student:
 # // confirmations.
 
 
-# // input
-# // FlightBooking
-# // output
-# // Available flights
-# // process
-# // create a class that represents the booking system
-# // create methods for available flights
-
-# class FlightBooking:
-#     def __init__(self,destination,date,reserveSeats,passengerInformation,bookingConfirmations)
-#         self.destination = destination
-#         self.date= date
-#         self.reserveSeats = reserveSeats
-#         self.passengerInformation = passengerInformation
-#         self.bookingConfirmations = bookingConfirmations
-        
-
-# // Create a LibraryCatalog class that handles the cataloging and management of
-# // books in a library. Implement methods to add new books, search for books by
-# // title or author, keep track of available copies, and display book details.        
-        
 
        
 
