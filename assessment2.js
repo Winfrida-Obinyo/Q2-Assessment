@@ -14,21 +14,35 @@
 // Process
 // Creating a class known as Recipe ans pass in the attributes
 // create sublasses and pass in unique properties
-
-
-class Recipe{
-    constructor(uniqiueIngredients,preparationTime,cookingMethod,NutritionalInformation){
-        this.uniqiueIngredients = uniqiueIngredients;
-        this.preparationTime = preparationTime,
-        this.cookingMethod= cookingMethod,
-        this.NutritionalInformation=NutritionalInformation
+class Recipe {
+    constructor(uniqueIngredients, preparationTime, cookingMethod, nutritionalInformation) {
+      this.uniqueIngredients = uniqueIngredients;
+      this.preparationTime = preparationTime;
+      this.cookingMethod = cookingMethod;
+      this.nutritionalInformation = nutritionalInformation;
     }
-}
-    class MoroccanRecipe extends Recipe{
-        const = RecipeIsAvailable ()
-
-        }
+  }
+  
+  class MoroccanRecipe extends Recipe {
+    constructor(uniqueIngredients, preparationTime, cookingMethod, nutritionalInformation) {
+      super(uniqueIngredients, preparationTime, cookingMethod, nutritionalInformation);
+      
     }
+  }
+  
+  class EthiopianRecipe extends Recipe {
+    constructor(uniqueIngredients, preparationTime, cookingMethod, nutritionalInformation) {
+      super(uniqueIngredients, preparationTime, cookingMethod, nutritionalInformation);
+      
+    }
+  }
+  
+  class NigerianRecipe extends Recipe {
+    constructor(uniqueIngredients, preparationTime, cookingMethod, nutritionalInformation) {
+      super(uniqueIngredients, preparationTime, cookingMethod, nutritionalInformation);
+      
+    }
+  }
 
     // **Ancestral Stories:** In many African cultures, the art of storytelling is passed
     // down from generation to generation. Imagine you're creating an application that
@@ -40,7 +54,7 @@ class Recipe{
 
 //   Input
 
-//   Ancestral Stories
+//    Stories
 //   output
 
 //   application that will record the Stories
@@ -48,14 +62,30 @@ class Recipe{
 //   Process
 //   creating a class and pass in the attributesmp
 //   create methods(record the stories,translating to different languages)
-class AncestralStories{
-    constructor(length,moralLessons,ageGroup){
-        this.length = length,
-        this.moralLessons = moralLessons,
-        this.ageGroup= ageGroup
+class Story {
+    constructor(length, moralLessons, ageGroup) {
+      this.length = length;
+      this.moralLessons = moralLessons;
+      this.ageGroup = ageGroup;
     }
-   
-}
+  }
+  
+  class StoryTeller {
+    constructor(name, stories) {
+      this.name = name;
+      this.stories = stories;
+    }
+  }
+  
+  class Translator {
+    constructor(languages) {
+      this.languages = languages;
+    }
+  
+    translate(story, targetLanguage) {
+      // Implementation of translation logic
+    }
+  }
    let = recordStories extends AncestralStories(length,moralLessons,ageGroup){
 
 }
@@ -77,20 +107,27 @@ class AncestralStories{
 // creating a method
 
 
-class Species{
-    constructor(diet,typicalLifespan,migrationPatterns){
-        this.diet=diet,
-        this.typicalLifespan= typicalLifespan,
-        this.migrationPatterns= migrationPatterns
-
+class Species {
+    constructor(diet, typicalLifespan, migrationPatterns) {
+      this.diet = diet;
+      this.typicalLifespan = typicalLifespan;
+      this.migrationPatterns = migrationPatterns;
     }
-}
-class Predators{
-
-}
-class Prey{
-
-}
+  }
+  
+  class Predator extends Species {
+    constructor(diet, typicalLifespan, migrationPatterns) {
+      super(diet, typicalLifespan, migrationPatterns);
+      
+    }
+  }
+  
+  class Prey extends Species {
+    constructor(diet, typicalLifespan, migrationPatterns) {
+      super(diet, typicalLifespan, migrationPatterns);
+      
+    }
+  }
 
 // **African Music Festival:** You're in charge of organizing a Pan-African music
 // festival. Many artists from different countries, each with their own musical style
@@ -109,14 +146,33 @@ class Prey{
 // create a subclasses
 // create methods
 
-class MusicFestivals{
-    constructor(festivalLineup,schedule,stageArrangements){
-        this.festivalLineup =festivalLineup
-        this.schedule = schedule
-        this.stageArrangements = stageArrangements
-
+class Artist {
+    constructor(name, musicalStyle, instruments) {
+      this.name = name;
+      this.musicalStyle = musicalStyle;
+      this.instruments = instruments;
     }
-}
+  }
+  
+  class Performance {
+    constructor(artists, startTime, endTime) {
+      this.artists = artists;
+      this.startTime = startTime;
+      this.endTime = endTime;
+    }
+  }
+  
+  class Stage {
+    constructor(name, location, capacity) {
+      this.name = name;
+      this.location = location;
+      this.capacity = capacity;
+    }
+  
+    assignPerformance(performance) {
+      
+    }
+  }
 
 
 
